@@ -9,9 +9,7 @@ import "./Main.css";
 import LocalForm from "./components/LocalForm";
 import LocalItem from "./components/LocalItem";
 
-// Componente é um bolco isolado de HTML, CSS e JS, o qual não interfere no restante da aplicação
-// Estado é uma informação mantida pelo componente (Imutabilidade)
-// Propriedade são informações que um componente PAI passa para um componente FILHO
+import logo from "./assets/placeholder.png";
 
 export default () => {
 	const [locals, setLocals] = useState([]);
@@ -37,8 +35,11 @@ export default () => {
 
 	return (
 		<div id="app">
+			<div className="background" />
 			<aside>
-				<strong>Cadastrar</strong>
+				<img src={logo} alt="logo" />
+				<br />
+				<strong>TOUR - ONDE COMER?</strong>
 				<LocalForm onSubmit={handleAddLocal} />
 			</aside>
 

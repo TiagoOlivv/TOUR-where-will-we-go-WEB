@@ -8,6 +8,16 @@
 	align-items: flex-start;
 }
 
+#app .background {
+	position: absolute;
+	background-color: #2867b2;
+	height: 100px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
 #app main {
 	margin-left: 30px;
 }

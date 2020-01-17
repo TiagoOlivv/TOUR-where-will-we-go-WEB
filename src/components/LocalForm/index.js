@@ -54,47 +54,51 @@ export default ({ onSubmit }) => {
 	return (
 		<form onSubmit={handleSubmit}>
 			<div className="input-block">
-				<label htmlFor="instagram_username">Usuário do Instagram</label>
+				<label htmlFor="instagram_username" />
 				<input
 					name="instagram_username"
 					id="instagram_username"
 					value={instagram_username}
 					onChange={e => setInstagramUsername(e.target.value)}
+					placeholder="Usuário do Instagram"
 					required
 				/>
 			</div>
 
 			<div className="input-block">
-				<label htmlFor="acting">Área de Atuação</label>
+				<label htmlFor="acting" placeholder="" />
 				<input
 					name="acting"
 					id="acting"
 					value={acting}
 					onChange={e => setActing(e.target.value)}
+					placeholder="Área de Atuação"
 					required
 				/>
 			</div>
 
 			<div className="input-block">
-				<label htmlFor="specialties">Especialidades</label>
+				<label htmlFor="specialties" />
 				<input
 					name="specialties"
 					id="specialties"
 					value={specialties}
 					onChange={e => setSpecialties(e.target.value)}
+					placeholder="Especialidades"
 					required
 				/>
 			</div>
 
 			<div className="input-block">
-				<label htmlFor="phone">Telefone</label>
+				<label htmlFor="phone" />
 				<input
-					type="number"
+					type="tel"
 					name="phone"
 					id="phone"
-					required
 					value={phone}
 					onChange={e => setPhone(e.target.value)}
+					placeholder="Telefone"
+					required
 				/>
 			</div>
 

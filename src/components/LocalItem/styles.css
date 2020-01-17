@@ -3,6 +3,12 @@ li.local-item {
 	box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
 	border-radius: 2px;
 	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
 }
 
 li.local-item header {
@@ -41,11 +47,11 @@ li .local-item p {
 }
 
 li .local-item link {
-	color: #8e4dff;
+	color: #2867b2;
 	font-size: 14px;
 	text-decoration: none;
 }
 
 li .local-item a:hover {
-	color: #5a2ea6;
+	color: #20528e;
 }
