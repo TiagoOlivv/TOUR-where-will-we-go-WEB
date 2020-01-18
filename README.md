@@ -1,9 +1,7 @@
 # Semana OmniStack 10.0 da Rocketseat :rocket:
 ## TOUR - where will we go - WEB
 Aplicação web desenvolvida com auxilio da Rocketseat na 10ª semana omnistack 
-<p align="center">
-  <img width="560" height="400" src="img/home.png">
-</p>
+
 ## :rocket: Tecnologias usadas
 Este projeto foi desenvolvido com as seguintes tecnologias:
 - [ReactJS](https://reactjs.org)
@@ -11,6 +9,10 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ## :computer: Projeto
 
 O TOUR é um projeto que visa conectar lanchonetes, restaurantes e bares com clientes por meio da localidade, em um raio de 20km.
+<p align="center">
+  <img src="img/home.png">
+</p>
+
 
 ## :mortar_board: Quem ministrou?
 
