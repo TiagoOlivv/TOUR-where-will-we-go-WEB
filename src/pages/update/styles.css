@@ -14,6 +14,10 @@
 	box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
 	border-radius: 2px;
 	padding: 30px 20px;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
 }
 
 #update-content > #update-form,
@@ -30,8 +34,8 @@
 }
 
 #update-content > img {
-	width: 54px;
-	height: 54px;
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
 }
 
@@ -48,7 +52,7 @@
 	width: 100%;
 	border: 0;
 	margin-top: 30px;
-	background-color: #7d40e7;
+	background-color: #2867b2;
 	border-radius: 2px;
 	padding: 15px 20px;
 	font-size: 16px;
@@ -57,8 +61,12 @@
 	cursor: pointer;
 }
 
+#update-form > button[type="submit"]:hover {
+	background-color: #20528e;
+}
+
 #update-block > label {
-	color: #acacac;
+	color: #000;
 	font-size: 15px;
 	font-weight: bold;
 	display: block;
