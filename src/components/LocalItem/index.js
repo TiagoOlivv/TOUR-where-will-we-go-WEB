@@ -1,9 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import api from "../../services/api";
 
 import "./styles.css";
-import instagram from "../../assets/instagram.png";
 
 export default ({ local }) => {
+	async function deleteLocal() {
+		await api.delete(`/locals/${local._id}/remove`);
+		window.location.reload();
+	}
+
 	return (
 		<li className="local-item">
 			<header>
@@ -20,6 +26,22 @@ export default ({ local }) => {
 				</div>
 			</header>
 			<p>{local.biography}</p>
+			<div className="local-controll">
+				<Link
+					id="update-local"
+					to={{
+						pathname: "/update",
+						state: {
+							local
+						}
+					}}
+				>
+					Atualizar
+				</Link>
+				<button id="remove-local" onClick={deleteLocal}>
+					Remover
+				</button>
+			</div>
 		</li>
 	);
 };
