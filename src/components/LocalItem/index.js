@@ -25,9 +25,9 @@ export default ({ local }) => {
 					<span>{local.phone}</span>
 				</div>
 			</header>
-			<p>{local.biography}</p>
+			<p className="biography">{local.biography}</p>
 			<div className="local-controll">
-				<Link
+				{/* <Link
 					id="update-local"
 					to={{
 						pathname: "/update",
@@ -37,7 +37,7 @@ export default ({ local }) => {
 					}}
 				>
 					Atualizar
-				</Link>
+				</Link> */}
 				<button id="remove-local" onClick={deleteLocal}>
 					Remover
 				</button>

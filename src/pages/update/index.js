@@ -12,7 +12,7 @@ export default function Update({ location, history }) {
 		phone,
 		acting,
 		biography,
-		location: user_location
+		location: user_location,
 	} = location.state.local;
 
 	const [newPhone, setPhone] = useState(phone);
@@ -39,11 +39,11 @@ export default function Update({ location, history }) {
 			a,
 			newActing,
 			latitude,
-			longitude
+			longitude,
 		});
 
 		history.push({
-			pathname: "/"
+			pathname: "/",
 		});
 	}
 
@@ -59,7 +59,7 @@ export default function Update({ location, history }) {
 						<input
 							name="acting"
 							value={newActing}
-							onChange={e => setActing(e.target.value)}
+							onChange={(e) => setActing(e.target.value)}
 							required
 						/>
 					</div>
@@ -68,7 +68,7 @@ export default function Update({ location, history }) {
 						<input
 							name="a"
 							value={a}
-							onChange={e => setSpecialties(e.target.value)}
+							onChange={(e) => setSpecialties(e.target.value)}
 							required
 						/>
 					</div>
@@ -78,7 +78,7 @@ export default function Update({ location, history }) {
 							type="number"
 							name="phone"
 							value={newPhone}
-							onChange={e => setPhone(e.target.value)}
+							onChange={(e) => setPhone(e.target.value)}
 							required
 						/>
 					</div>
@@ -89,7 +89,7 @@ export default function Update({ location, history }) {
 								type="number"
 								name="latitude"
 								value={latitude}
-								onChange={e => setLatitude(e.target.value)}
+								onChange={(e) => setLatitude(e.target.value)}
 								required
 							/>
 						</div>
@@ -98,7 +98,7 @@ export default function Update({ location, history }) {
 							<input
 								name="longitude"
 								value={longitude}
-								onChange={e => setLongitude(e.target.value)}
+								onChange={(e) => setLongitude(e.target.value)}
 								required
 							/>
 						</div>

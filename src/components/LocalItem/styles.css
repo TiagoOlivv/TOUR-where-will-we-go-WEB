@@ -57,14 +57,14 @@ li .local-item a:hover {
 }
 
 .local-controll {
-	display: grid;
-	gap: 20px;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+
 	margin-top: 35px;
 }
 
 .local-controll button {
-	height: 30px;
+	height: 40px;
+	flex: 1;
 	border: 0;
 	border-radius: 3px;
 	color: #fff;
